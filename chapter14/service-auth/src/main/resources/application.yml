@@ -15,7 +15,7 @@ spring:
     show-sql: true
 server:
   context-path: /uaa
-  port: 5000
+  port: 8800
 
 security:
   oauth2:

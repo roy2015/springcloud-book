@@ -18,6 +18,7 @@ public class LoggerService {
     private AmqpTemplate rabbitTemplate;
 
     public void log(SysLog sysLog){
-        rabbitTemplate.convertAndSend(RabbitConfig.queueName, JSON.toJSONString(sysLog));
+        //先注释调，没有安装rbmq
+//        rabbitTemplate.convertAndSend(RabbitConfig.queueName, JSON.toJSONString(sysLog));
     }
 }
